@@ -1,14 +1,14 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
+import Top from './components/Top.js'
+import Body from './components/Body.js'
 function App() {
   return (
     <>
-      <Navbar title="TextUtils"/>
-      <div className="container" my-3> 
-        <TextForm heading="Enter the text to analyse"/>
+      <Top/>
+      {/* hello */}
+      <div className="container">
+        <Body />
       </div>
-
     </>
     );
 }
