@@ -58,8 +58,4 @@ function Body() {
         //   description={x.description}
         //   img={x.urlToImage}
       ))}
-    </>
-  );
-}
-
 export default Body;
