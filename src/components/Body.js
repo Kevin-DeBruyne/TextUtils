@@ -19,12 +19,12 @@ function Body() {
     // obj={ user : name }
     // setCard(name)
     fetch(`https://leetcode-stats-api.herokuapp.com/${name}`)
-    .then((response) => response.json())
-    // .then(() => setArray((current) => [...current, obj]))
-    .then((data) => setArray(current => [...current, data]))
-    .catch((error) => console.error(error));
+      .then((response) => response.json())
+      // .then(() => setArray((current) => [...current, obj]))
+      .then((data) => setArray(current => [...current, data]))
+      .catch((error) => console.error(error));
   };
-  let nm = {name};
+  // let nm = { name };
   return (
     <>
       <input
@@ -58,4 +58,7 @@ function Body() {
         //   description={x.description}
         //   img={x.urlToImage}
       ))}
+    </>
+  )
+}
 export default Body;
