@@ -1,16 +1,13 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
+import "./App.css";
+import Nav from "./components/Top"
+import Body from "./components/Body"
 function App() {
   return (
     <>
-      <Navbar title="TextUtils"/>
-      <div className="container" my-3> 
-        <TextForm heading="Enter the text to analyse"/>
-      </div>
-
+      <Nav />
+      <Body var="katara"/>
     </>
-    );
+  );
 }
 
 export default App;
